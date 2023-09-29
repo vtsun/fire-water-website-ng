@@ -1,0 +1,142 @@
+.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-left: 8px;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: top 0.3s ease;
+    z-index: 999;
+}
+
+header .navbar ul {
+    list-style: none;
+    justify-content: center;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+
+    padding: 30px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    color: rgba(160, 160, 160);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    float: none;
+}
+
+header .navbar ul li ul li a {
+    font-size: 16px;
+    white-space: nowrap;
+
+}
+
+header .navbar ul li ul li a:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 4px;
+
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: white;
+    float: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    header label {
+        display: initial;
+        padding: 20px
+    }
+
+    header label:hover {
+        color: lightgray;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 8px;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header .banner {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+
+    }
+}
+
+.hamburger {
+    height: 39px;
+}

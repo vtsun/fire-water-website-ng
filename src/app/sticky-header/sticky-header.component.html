@@ -1,1 +1,60 @@
-<p>sticky-header works!</p>
+<header class="sticky-header">
+    <nav class="banner">
+        <a href="https://nicholas.duke.edu/">
+            <img class="logo" src="assets/nicholas-school-logo-white.svg" alt="Duke Logo" />
+        </a>
+        <a href="https://www.usda.gov/">
+            <img class="logo" src="assets/usda-logo.svg" alt="USDA Logo" />
+        </a>
+        <a href="https://www.fs.usda.gov/">
+            <img class="logo" src="assets/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
+        </a>
+        <a href="https://www.epa.gov/">
+            <img class="logo" src="assets/EPA_logo_white.svg" alt="EPA Logo" />
+        </a>
+    </nav>
+
+    <!-- Menu Bar for small resolutions -->
+    <!-- Change to animated icon later -->
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="menu-label">
+        <img class="hamburger" src="assets/hamburger.svg">
+        <!-- Menu -->
+    </label>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <!-- <li><a href="homepage.html">Home</a></li> -->
+            <li><a [routerLink]="''">Home</a></li>
+            <li>
+                <a [routerLink]="'/project'">Project</a>
+                <ul>
+                    <li><a href="about-project-overview.html">Overview</a></li>
+                    <li><a href="about-us.html">Participants</a></li>
+                    <li><a href="about-updates.html">News & Updates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a [routerLink]="'/data'">Data</a>
+                <ul>
+                    <li><a href="map-interactive-1.html">Interactive Wildfire Map</a></li>
+                    <li><a href="data-wildfire-search.html">Search Wildfires</a></li>
+                    <!-- <li><a href="">Map 2</a></li>
+                            <li><a href="">Map 3</a></li> -->
+                </ul>
+            </li>
+            <li>
+                <a [routerLink]="'/careers'">Careers</a>
+                <!-- <ul>
+                            <li><a href=""></a></li>
+                        </ul> -->
+            </li>
+            <li>
+                <a [routerLink]="'/resources'">Resources</a>
+                <ul>
+                    <li><a href="resources-references.html">References</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
