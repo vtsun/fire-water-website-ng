@@ -44,3 +44,91 @@
     font-size: 60px;
     color: white;
 }
+
+.homepage-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+.grid-page {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 365px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid-page-image-container img {
+    /* flex: 1; */
+    width: 365px;
+    height: 365px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid-page-img {
+    width: 365px;
+    height: 200px;
+}
+
+.grid-page-text-container {
+    flex: 2;
+}
+
+.grid-page-text-container h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.grid-page-text-container p {
+    text-align: left;
+}
+
+.grid-page-button-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 32.5px;
+
+}
+
+.grid-page-button-container a {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.grid-page-button-container a:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.grid-page-button {
+    width: 300px;
+    padding: 24px 24px;
+    background-color: rgba(40, 40, 40);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grid-page-button:hover {
+    background-color: rgba(80, 80, 80);
+}
