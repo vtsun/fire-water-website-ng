@@ -21,6 +21,9 @@ import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -42,20 +45,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    MatCardModule,
+    MatButtonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NgxPaginationModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent},
-      { path: 'resources', component: ResourcesComponent},
-      { path: 'careers', component: CareersComponent},
-      { path: 'data', component: DataComponent},
-      { path: 'project', component: ProjectComponent},
-      { path: 'project-overview', component: ProjectOverviewComponent},
-      { path: 'project-participants', component: ProjectParticipantsComponent},
-      { path: 'project-updates', component: ProjectUpdatesComponent},
-      { path: 'resources-references', component: ResourcesReferencesComponent}
+      { path: '', component: HomeComponent },
+      { path: 'resources', component: ResourcesComponent },
+      { path: 'careers', component: CareersComponent },
+      { path: 'data', component: DataComponent },
+      { path: 'project', component: ProjectComponent },
+      { path: 'project-overview', component: ProjectOverviewComponent },
+      { path: 'project-participants', component: ProjectParticipantsComponent },
+      { path: 'project-updates', component: ProjectUpdatesComponent },
+      { path: 'resources-references', component: ResourcesReferencesComponent }
 
     ]),
     BrowserAnimationsModule
