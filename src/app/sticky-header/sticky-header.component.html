@@ -29,9 +29,9 @@
             <li>
                 <a [routerLink]="'/project'">Project</a>
                 <ul>
-                    <li><a href="about-project-overview.html">Overview</a></li>
-                    <li><a href="about-us.html">Participants</a></li>
-                    <li><a href="about-updates.html">News & Updates</a></li>
+                    <li><a [routerLink]="'/project-overview'">Overview</a></li>
+                    <li><a href="/project-participants">Participants</a></li>
+                    <li><a href="/project-updates">News & Updates</a></li>
                 </ul>
             </li>
             <li>
@@ -52,7 +52,7 @@
             <li>
                 <a [routerLink]="'/resources'">Resources</a>
                 <ul>
-                    <li><a href="resources-references.html">References</a></li>
+                    <li><a href="/resources-references">References</a></li>
                 </ul>
             </li>
         </ul>

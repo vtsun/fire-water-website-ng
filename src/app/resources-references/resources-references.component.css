@@ -1,0 +1,27 @@
+.reference-container {
+    margin: 0;
+}
+
+.references-content-container {
+    padding-top: 84px;
+}
+
+.reference-table {
+    width: 100%;
+}
+
+.mat-column-title {
+    width: 30%;
+}
+
+.mat-column-authors {
+    width: 20%;
+}
+
+.mat-column-year {
+    width: 5%;
+}
+
+.mat-column-citation {
+    width: 45%;
+}

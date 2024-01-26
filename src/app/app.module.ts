@@ -10,6 +10,17 @@ import { ResourcesComponent } from './resources/resources.component';
 import { CareersComponent } from './careers/careers.component';
 import { DataComponent } from './data/data.component';
 import { ProjectComponent } from './project/project.component';
+import { ProjectOverviewComponent } from './project-overview/project-overview.component';
+import { ProjectParticipantsComponent } from './project-participants/project-participants.component';
+import { ProjectUpdatesComponent } from './project-updates/project-updates.component';
+import { ResourcesReferencesComponent } from './resources-references/resources-references.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { MatTableModule, MatTableDataSource } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,17 +31,34 @@ import { ProjectComponent } from './project/project.component';
     CareersComponent,
     DataComponent,
     ProjectComponent,
+    ProjectOverviewComponent,
+    ProjectParticipantsComponent,
+    ProjectUpdatesComponent,
+    ResourcesReferencesComponent,
+    FilterPipe,
+
   ],
   imports: [
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    NgxPaginationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'resources', component: ResourcesComponent},
       { path: 'careers', component: CareersComponent},
       { path: 'data', component: DataComponent},
       { path: 'project', component: ProjectComponent},
-    ])
+      { path: 'project-overview', component: ProjectOverviewComponent},
+      { path: 'project-participants', component: ProjectParticipantsComponent},
+      { path: 'project-updates', component: ProjectUpdatesComponent},
+      { path: 'resources-references', component: ResourcesReferencesComponent}
+
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

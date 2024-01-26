@@ -1,0 +1,38 @@
+<header>
+    <app-sticky-header></app-sticky-header>
+</header>
+
+<body>
+    <div class="references-content-container">
+        <div class="ref-content">
+            <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)" class="mat-elevation-z8 reference-table">
+                <!-- Title Column -->
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by title"> Title </th>
+                    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+                </ng-container>
+                <!-- Authors Column -->
+                <ng-container matColumnDef="authors">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by authors"> Authors </th>
+                    <td mat-cell *matCellDef="let element"> {{element.authors}} </td>
+                </ng-container>
+                <!-- Year Column -->
+                <ng-container matColumnDef="year">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by year"> Year </th>
+                    <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+                </ng-container>
+                <!-- Citation Column -->
+                <ng-container matColumnDef="citation">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by citation"> Citation </th>
+                    <td mat-cell *matCellDef="let element"> {{element.citation}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+            <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of references">
+            </mat-paginator>
+        </div>
+    </div>
+</body>
