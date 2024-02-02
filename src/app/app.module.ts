@@ -25,6 +25,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 
 
@@ -53,6 +55,7 @@ import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
+    MatDividerModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
