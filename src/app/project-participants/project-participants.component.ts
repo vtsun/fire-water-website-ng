@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class ProjectParticipantsComponent {
+  openLink(url: string): void {
+    window.open(url, '_blank');
+  }
 }
 

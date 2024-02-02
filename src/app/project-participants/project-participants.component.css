@@ -11,10 +11,18 @@
     background-color: white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 mat-card-subtitle {
     color: black
+}
+
+mat-card-content {
+    flex: 1;
+    overflow: auto;
 }
 
 /* mat-card-actions {

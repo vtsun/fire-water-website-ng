@@ -68,7 +68,6 @@ import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
       { path: 'project-participants', component: ProjectParticipantsComponent },
       { path: 'project-updates', component: ProjectUpdatesComponent },
       { path: 'resources-references', component: ResourcesReferencesComponent }
-
     ]),
   ],
   providers: [],
