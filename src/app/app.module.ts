@@ -23,6 +23,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
+
+
 
 
 @NgModule({
@@ -47,7 +51,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatPaginatorModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
+    MatTooltipModule,
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     NgxPaginationModule,
@@ -63,7 +70,6 @@ import { MatButtonModule } from '@angular/material/button';
       { path: 'resources-references', component: ResourcesReferencesComponent }
 
     ]),
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
