@@ -26,6 +26,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -56,6 +57,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatIconModule,
     MatTooltipModule,
     MatDividerModule,
+    MatSidenavModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

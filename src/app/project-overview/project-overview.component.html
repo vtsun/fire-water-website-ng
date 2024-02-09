@@ -1,8 +1,25 @@
 <app-sticky-header></app-sticky-header>
 
 <div class="project-overview-container">
-    <div class="index">
-
-    </div>
-
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="side" opened="true" fixedInViewport="true">
+            <div class="sidenav-index">
+                <h2>Overview</h2>
+                <ul>
+                    <li><a href="">Background and Objectives</a></li>
+                    <li><a href="">Timeline</a></li>
+                    <li><a href="">Literature Review</a></li>
+                </ul>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="sidenav-content-container">
+                <div id="background-and-objectives">
+                    <h1>
+                        Project Background and Objectives
+                    </h1>
+                </div>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>
