@@ -141,6 +141,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 48px;
+    padding-bottom: 48px;
+
 }
 
 
@@ -169,7 +171,7 @@ mat-card-footer {
     padding: 24px;
 }
 
-button[mat-flat-button] {
+/* button[mat-flat-button] {
     background-color: rgba(40, 40, 40);
     border-radius: 12px;
     padding: 24px 24px;
@@ -186,4 +188,22 @@ button[mat-flat-button]:hover {
 a {
     font-size: 16px;
     color: white;
+} */
+
+mat-card-footer a {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+mat-card-footer a:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+mat-card:hover {
+    scale: 1.05;
+    transition: 0.2s;
 }
