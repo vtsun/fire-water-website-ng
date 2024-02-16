@@ -1,5 +1,4 @@
-.project-overview-container {
-}
+.project-overview-container {}
 
 .sidenav-container {
     height: 1000px;
@@ -13,7 +12,8 @@ mat-sidenav {
 
 mat-sidenav-content {
     background-color: white;
-    color: black
+    color: black;
+    padding-bottom: 48px;
 }
 
 .sidenav-index {
@@ -23,13 +23,16 @@ mat-sidenav-content {
 }
 
 .sidenav-index h2 {
-    margin-bottom: 24px;
-    font-size: 24px;
+    margin-bottom: 48px;
+    font-size: 30px;
 }
 
-.sidenav-index ul li{
+.sidenav-index ul li {
     text-decoration: none;
     list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 .sidenav-index ul li a {
@@ -38,10 +41,37 @@ mat-sidenav-content {
 
 .sidenav-index ul li a:hover {
     text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
 }
 
 .sidenav-content-container {
     margin-top: 104px;
-    margin-left: 16px;
+    margin-left: 48px;
+    margin-right: 8%;
+}
 
+.sidenav-content-container h1 {
+    font-size: 42px;
+    padding-top: 14px;
+    padding-bottom: 40px;
+}
+
+.sidenav-content-container h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.sidenav-content-container p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.sidenav-content-container ol li {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
 }

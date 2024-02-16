@@ -6,18 +6,225 @@
             <div class="sidenav-index">
                 <h2>Overview</h2>
                 <ul>
-                    <li><a href="">Background and Objectives</a></li>
-                    <li><a href="">Timeline</a></li>
-                    <li><a href="">Literature Review</a></li>
+                    <li><a [routerLink]="[]" [fragment]="'background-and-objectives'">Background and Objectives</a></li>
+                    <li><a [routerLink]="[]" fragment="timeline">Timeline</a></li>
+                    <li><a [routerLink]="[]" fragment="literature-review">Literature Review</a></li>
                 </ul>
             </div>
         </mat-sidenav>
         <mat-sidenav-content>
             <div class="sidenav-content-container">
+
                 <div id="background-and-objectives">
                     <h1>
                         Project Background and Objectives
                     </h1>
+                    <p>
+                        In recent years, wildfires have increased and spread rapidly, and have become more difficult to
+                        control, especially in the western US. The cumulative impacts of wildland fire on watersheds
+                        have
+                        not been fully understood, especially given climate-induced increases in frequency and severity
+                        of
+                        fire. The examination of water quality in areas affected by wildfires is still lacking, putting
+                        millions of Americans at risk. It is of critical importance to investigate the potential impact
+                        of
+                        climate changes on wildfire and seek management options.
+                    </p>
+                    <p>
+                        Prescribed fires are widely used to confront the wildfire crises and maintain the health of US
+                        forests. Previous studies have suggested wildland fires could elevate sediment and nutrient
+                        concentration threatening water supplies. However, how prescribed fires will impact water
+                        quality
+                        and quantity have not been fully understood especially in a changing climate. Examination of
+                        water
+                        quality in the areas affected by prescribed fires is still lacking, putting millions of
+                        Americans at
+                        risk. It is of critical importance to understand the state of knowledge, identify research gaps
+                        and
+                        explore potential modeling approached of the benefits and potential impacts of prescribed fires
+                        on
+                        water quality in the Eastern US.
+                    </p>
+                    <p>
+                        Our research projects assess cumulative effects of wildfire on watershed water quantity and
+                        quality
+                        using advanced tools that include hydrological models and fire disturbance models. Using a
+                        integrated modeling system, we will investigate the potential impacts of changing climate and
+                        wildfire regimes on watershed functions that are critical to clean water supply in the U.S.
+                    </p>
+                    <p>
+                        Specifically, the project aims to:
+                    </p>
+                    <ol>
+                        <li>
+                            Improve existing forest hydrological models and Forests to Faucets (F2F) decision support
+                            tools
+                            to target catchments for restoration activities to improve water quality, and:
+                        </li>
+                        <li>
+                            Synthesize the state of knowledge, identify research gaps, and explore potential modeling
+                            approaches of the benefits and potential impacts of prescribed fires on water quality in the
+                            East.
+                        </li>
+                    </ol>
+                    <p>
+                        The USDA Forest Service has developed a 10-year plan to deal with wildland fire and this project
+                        will develop the necessary tools and science for implement the plan. At the same time, research
+                        outcomes (tools and trained personals) are useful for training future scientists for protecting
+                        drinking water supply in many impacted watersheds in eastern and western forests.
+                    </p>
+                </div>
+                <div id="timeline">
+                    <h1>
+                        Project Timeline
+                    </h1>
+                    <p>
+                        This project will be developed in two phases.
+                    </p>
+                    <p>
+                        The first phase is from 4/1/2023‒ 9/30/2023 and the second phase starts from 10/1/2023–
+                        12/31/2024.
+                    </p>
+
+                    <h3>
+                        Task 1 (phase 1, 4/1/2023‒12/31/2023): database and model revisions
+                    </h3>
+
+                    <p>
+                        Scientists at USFS will work together with collaborators on developing an integrated database
+                        and a
+                        simulation tool for assessing cumulative effects of wildfire on watersheds by coupling
+                        hydrologic
+                        models with a fire disturbance model. The fire disturbance model can simulate burn severity
+                        patterns
+                        and creates new soil and land cover types characterized by the burn severity. Modeled burn
+                        severity
+                        will be compared to fire severity maps developed from remote sensing.
+                    </p>
+
+                    <h3>
+                        Task 2 (phase 2, 1/1/2024‒12/31/2024):
+                    </h3>
+
+                    <p>
+                        Using WaSSI-Fire model or DHSVM-Fire, USFS and collaborators will investigate the potential
+                        impacts
+                        of changing climate and wildfire regimes on watersheds, including effects on disturbance and
+                        stress
+                        interactions, streamflow, and post-fire ecological processes in Region 9 and 10 of EPA and
+                        Region 8
+                        of FS.
+                    </p>
+
+                    <h3>
+                        Task 3 (phase 2, 1/1/2025‒9/30/2025):
+                    </h3>
+
+                    <p>
+                        In consultation with USFS, collaborators will prepare the datasets and maps resulting from the
+                        simulations and analyses that will be made available to FS. USFS and Duke will prepare a
+                        manuscript
+                        describing the context, datasets, modeling approach, key results, and conclusions of this
+                        research.
+                    </p>
+
+                    <h3>
+                        Task 4 (phase 2, 10/1/2025‒3/31/2026):
+                    </h3>
+
+                    <p>
+                        Explore potential effects of fire management practices could reduce fire impacts to water
+                        quantity
+                        and quality through scenarios development and analysis using the validated DHSVM-Fire and
+                        WaSSI-Fire. The scenarios include different management practices during three distinct time
+                        periods,
+                        e.g., no recovery, initial recovery and fully recovered after burned. The fire management
+                        options
+                        include prescribed burning, forest thinning/timber harvesting, or mechanical treatment.
+                    </p>
+
+                </div>
+                <div id="literature-review">
+                    <h1>
+                        Literature Review
+                    </h1>
+                    <p>
+                        Forest lands provide the best water quality among all land uses (Sun et al., 2004; Caldwell et
+                        al.,
+                        2023). The eastern U.S. is heavily covered by forests, managed and unmanaged, providing a
+                        majority
+                        of the surface water supply for domestic and industrial uses, agricultural irrigation and
+                        benefiting
+                        millions of people and the local economies (Liu et al., 2022). However, exacerbated by climate
+                        change, forest disturbances induced by drought, flood, hurricanes, insects, and diseases, and
+                        wildland fires negatively affect the hydrologic and biogeochemical cycles at multiple scales and
+                        elevate pollutant loading to downstream watersheds (Sun and Lockaby, 2012; Sun et al., 2013).
+                        Forest
+                        restoration is becoming more important to respond these environmental changes (Stanturf and
+                        Mansourian, 2020). For example, use of prescribed fire, a management strategy intended to build
+                        forest ecosystem resilience to wildfire and climate change, has been projected to increase (Liu
+                        et
+                        al. 2014; Vose et al. 2021; Greenberg and Collins, 2021).
+                    </p>
+                    <p>
+                        Irrespective of disturbances, several site-specific factors can affect surface water quality,
+                        including management activities, land use history (legacy effects), land cover, soil,
+                        topography,
+                        rainfall, flow patterns, and disturbance characteristics (Hallema et al., 2018; Caldwell et al.,
+                        2023). Landscape scale restoration activities such as prescribed fires, reforestation, tree
+                        species
+                        conversion, and wetland rehabilitation can improve water quantity and quality (Smith et al.,
+                        2021;
+                        Paul et al., 2022). For example, prescribed fires that are widely used in longleaf pine
+                        restoration
+                        and loblolly pine conversions are likely to reduce plant competition for soil moisture during
+                        drought, and thus enhance ecosystem resilience and water availability to aquatic ecosystems
+                        (Brantley et al., 2017). Many studies in the southern U.S. suggest prescribed fires that
+                        normally
+                        have low severity generally do not cause concerns of water quality (Sun et al., 2004) and fire
+                        generally has less effect on sediment loading in the Southern United States than in the Western
+                        United States (Crumbley et al., 2007). Increased soil erosion following fires is frequently
+                        associated with forest floor disturbances caused by mechanical site preparation during fire
+                        controlling activities (Van Lear, 1985). Similarly, operationally disturbed sites and especially
+                        skid trails have been found to be more susceptible to erosion following fires. Most fire
+                        research in
+                        the Southern Appalachians has involved fires of low-to-moderate intensity (Swift and others
+                        1993).
+                        The most important water quality improvement goal in forest restorations is reducing suspended
+                        sediment although other variables such as nutrients, organic carbon, and mercury are alse of
+                        concern
+                        (Chou et al., 2021). Severe wildland fires could elevate sediment concentration in the
+                        Appalachians
+                        (Caldwell et al., 2020) threatening water supplies (Pau et al., 2022; Bladon et al., 2014).
+                    </p>
+                    <p>
+                        Overall, the effectiveness of forest restoration decisions is constrained by both natural and
+                        socioeconomic factors (Stanturf and Mansourian, 2020; Jones et al., 2022). Quantifying benefits
+                        of
+                        restoration activities is challenging, thus more integrated studies are needed. It is not
+                        practical
+                        to conduct restoration activities everywhere for improving water quality and aquatic habitat due
+                        to
+                        cost constraints. Federal and non-Federal land managers need advanced tools that can be used to
+                        support ecosystem restoration decision making (e.g., Watershed Restoration Action Plan) so that
+                        restoration resources can target the most critical water quality hotspots to insure continued
+                        provisioning of water-related ecosystem services.
+                    </p>
+                    <p>
+                        Section 40804(b)10 of the Forestry Provisions in the BIL: Landscape scale restoration to restore
+                        water quality and fish passage provides direction and funding for ecosystem restoration but
+                        there is
+                        a need to identify the most fruitful areas for restoration. Due to the complexity of
+                        hydrological
+                        and biogeochemical responses to landscape restoration activities under different climatic and
+                        socioeconomic conditions, advanced decision support tools are needed for restoration planning
+                        purposes (Mashal et al., 2023; Jones et al. 2022). Recent literature review suggests existing
+                        hydrological and water quality modeling tools are promising for quantifying effects of forest
+                        restoration (Qi et al., 2022), but have challenges to apply to watersheds affects by forest
+                        fires
+                        and restoration due to the lack of empirical data (Crumbley et al., 2007; Ebel et al., 2023).
+                    </p>
+
                 </div>
             </div>
         </mat-sidenav-content>
