@@ -18,105 +18,17 @@
     </div>
 
     <div class="homepage-content-container" id="start-content">
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-                <img src="assets/fire_pic_4.png">
-            </div>
-
-            <div class="grid-page-text-container">
-            </div>
-
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="/project-overview">
-                    Learn About The Project
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-                <img src="">
-            </div>
-
-            <div class="grid-page-text-container">
-            </div>
-
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="/project-participants">
-                    View Project Participants
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-                <img src="assets/test_map_imagery.png">
-            </div>
-            <div class="grid-page-text-container">
-
-            </div>
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="">
-                    Explore Interactive Map
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-                <img src="assets/test_map_imagery.png">
-            </div>
-            <div class="grid-page-text-container">
-
-            </div>
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="/data">
-                    Explore Data
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-
-                <img src="">
-            </div>
-            <div class="grid-page-text-container">
-
-            </div>
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="/careers">
-                    View Careers
-                </a>
-            </div>
-        </div> -->
-
-        <!-- <div class="grid-page">
-            <div class="grid-page-image-container">
-
-                <img src="assets/fire_pic_1.png">
-            </div>
-            <div class="grid-page-text-container">
-
-            </div>
-            <div class="grid-page-button-container">
-                <a class="grid-page-button" href="/resources">
-                    View Resources
-                </a>
-            </div>
-        </div> -->
-
         <mat-card class="page-card">
             <img src="assets/fire_pic_1_crop.jpg" class="page-card-img">
             <mat-card-footer>
-                <a [routerLink]="'/project-overview'">Learn About The Project</a>
+                <a mat-stroked-button [routerLink]="'/project-overview'">Learn About The Project</a>
             </mat-card-footer>
         </mat-card>
 
         <mat-card class="page-card">
             <img src="assets/fire_pic_2_crop.jpg" class="page-card-img">
             <mat-card-footer>
-                <a [routerLink]="'/project-participants'">View Project Participants</a>
+                <a mat-stroked-button [routerLink]="'/project-participants'">View Project Participants</a>
             </mat-card-footer>
 
         </mat-card>
@@ -124,23 +36,24 @@
         <mat-card class="page-card">
             <img src="assets/fire_pic_3_crop.jpg" class="page-card-img">
             <mat-card-footer>
-                <a [routerLink]="'/data'">Explore Data</a>
+                <a mat-stroked-button [routerLink]="'/data'">Explore Data</a>
             </mat-card-footer>
         </mat-card>
 
         <mat-card class="page-card">
             <img src="assets/fire_pic_4_crop.jpg" class="page-card-img">
             <mat-card-footer>
-                <a [routerLink]="'/careers'">View Careers</a>
+                <a mat-stroked-button [routerLink]="'/careers'">View Careers</a>
             </mat-card-footer>
         </mat-card>
 
         <mat-card class="page-card">
             <img src="assets/test_map_imagery_crop.jpg" class="page-card-img">
             <mat-card-footer>
-                <a [routerLink]="'/resources'">View Resources</a>
+                <a mat-stroked-button [routerLink]="'/resources'">View Resources</a>
             </mat-card-footer>
         </mat-card>
     </div>
+
     <body></body>
 </main>

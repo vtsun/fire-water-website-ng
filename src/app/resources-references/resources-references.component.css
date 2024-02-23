@@ -25,3 +25,19 @@
 .mat-column-citation {
     width: 45%;
 }
+
+
+.reference-table {
+    background-color: white;
+}
+
+
+.reference-table td, th {
+    color: black;
+}
+
+
+mat-paginator{ 
+    background-color: rgb(120, 120, 120);
+}
+
