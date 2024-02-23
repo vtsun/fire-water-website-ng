@@ -4,10 +4,20 @@
 
 .references-content-container {
     padding-top: 84px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.ref-content {
+    min-height: calc(100vh - 84px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .reference-table {
     width: 100%;
+
 }
 
 .mat-column-title {
@@ -32,12 +42,14 @@
 }
 
 
-.reference-table td, th {
+.reference-table td,
+th {
     color: black;
 }
 
 
-mat-paginator{ 
-    background-color: rgb(120, 120, 120);
+mat-paginator {
+    /* background-color: rgb(120, 120, 120); */
+    position: sticky;
+    bottom: 0;
 }
-

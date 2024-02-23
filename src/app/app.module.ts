@@ -27,6 +27,10 @@ import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 
 
 
@@ -60,6 +64,8 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatDividerModule,
     MatSidenavModule,
     MatSnackBarModule,
+    MatInputModule,
+    MatFormFieldModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
