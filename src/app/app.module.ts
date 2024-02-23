@@ -26,6 +26,8 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 
 
@@ -57,6 +59,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatTooltipModule,
     MatDividerModule,
     MatSidenavModule,
+    MatSnackBarModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
