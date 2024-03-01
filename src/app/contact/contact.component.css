@@ -1,0 +1,14 @@
+.contact-page-container {
+    margin-top: 124px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+mat-form-field {
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+

@@ -39,14 +39,16 @@
             <li><a [routerLink]="'/project-participants'">Partners</a></li>
 
             <li>
-                <!-- <a [routerLink]="''">Products</a> -->
+                <!-- <a [routerLink]="'/products'">Products</a> -->
                 <a (click)="openSnackBar('Products Page Currently Unavailable', 'OK')">Products</a>
                 <ul>
                     <li>
-                        <a [routerLink]="''">Models</a>
+                        <!-- <a [routerLink]="'/products-models'">Models</a> -->
+                        <a (click)="openSnackBar('Models Page Currently Unavailable', 'OK')">Models</a>
                     </li>
                     <li>
-                        <a [routerLink]="''">Data</a>
+                        <!-- <a [routerLink]="'/data'">Data</a> -->
+                        <a (click)="openSnackBar('Data Page Currently Unavailable', 'OK')">Data</a>
                     </li>
                 </ul>
             </li>
@@ -56,17 +58,30 @@
                 <a [routerLink]="'/resources-references'">Resources</a>
 
                 <ul>
-                    <li><a [routerLink]="'/resources-events'">Events</a></li>
-                    <li><a [routerLink]="'/resources-publications'">Publications</a></li>
-                    <li><a [routerLink]="'/careers'">Work With Us</a></li>
-                    <li><a [routerLink]="'/resources-external-links'">External Links</a></li>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-events'">Events</a> -->
+                        <a (click)="openSnackBar('Events Page Currently Unavailable', 'OK')">Events</a>
+
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-publications'">Publications</a> -->
+                        <a (click)="openSnackBar('Publications Page Currently Unavailable', 'OK')">Publications</a>
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/careers'">Work With Us</a> -->
+                        <a (click)="openSnackBar('Career Page Currently Unavailable', 'OK')">Work With Us</a>
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-external-links'">External Links</a> -->
+                        <a (click)="openSnackBar('External Links Page Currently Unavailable', 'OK')">External Links</a>
+                    </li>
                     <li><a [routerLink]="'/resources-references'">References</a></li>
                 </ul>
             </li>
 
             <li>
-                <!-- <a [routerLink]="'/contact'">Contact</a> -->
-                <a (click)="openSnackBar('Contact Page Currently Unavailable', 'OK')">Contact</a>
+                <a [routerLink]="'/contact'">Contact</a>
+                <!-- <a (click)="openSnackBar('Contact Page Currently Unavailable', 'OK')">Contact</a> -->
             </li>
 
         </ul>

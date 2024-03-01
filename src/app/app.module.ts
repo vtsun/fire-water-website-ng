@@ -14,7 +14,7 @@ import { ProjectParticipantsComponent } from './project-participants/project-par
 import { ProjectUpdatesComponent } from './project-updates/project-updates.component';
 import { ResourcesReferencesComponent } from './resources-references/resources-references.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
@@ -34,12 +34,7 @@ import { ResourcesPublicationsComponent } from './resources-publications/resourc
 import { ResourcesExternalLinksComponent } from './resources-external-links/resources-external-links.component';
 import { ProductsModelsComponent } from './products-models/products-models.component';
 import { ContactComponent } from './contact/contact.component';
-
-
-
-
-
-
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
@@ -60,6 +55,7 @@ import { ContactComponent } from './contact/contact.component';
     ResourcesPublicationsComponent,
     ResourcesExternalLinksComponent,
     ContactComponent,
+    ProductsComponent,
 
   ],
   imports: [
@@ -79,6 +75,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxPaginationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -95,8 +92,7 @@ import { ContactComponent } from './contact/contact.component';
       { path: 'resources-external-links', component: ResourcesExternalLinksComponent },
       { path: 'products-models', component: ProductsModelsComponent },
       { path: 'contact', component: ContactComponent },
-
-
+      { path: 'products', component: ProductsComponent },
     ]),
   ],
   providers: [],
