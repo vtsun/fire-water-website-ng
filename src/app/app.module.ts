@@ -29,6 +29,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ResourcesEventsComponent } from './resources-events/resources-events.component';
+import { ResourcesPublicationsComponent } from './resources-publications/resources-publications.component';
+import { ResourcesExternalLinksComponent } from './resources-external-links/resources-external-links.component';
+import { ProductsModelsComponent } from './products-models/products-models.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -51,6 +56,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ProjectUpdatesComponent,
     ResourcesReferencesComponent,
     FilterPipe,
+    ResourcesEventsComponent,
+    ResourcesPublicationsComponent,
+    ResourcesExternalLinksComponent,
+    ContactComponent,
 
   ],
   imports: [
@@ -80,7 +89,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
       { path: 'project-overview', component: ProjectOverviewComponent },
       { path: 'project-participants', component: ProjectParticipantsComponent },
       { path: 'project-updates', component: ProjectUpdatesComponent },
-      { path: 'resources-references', component: ResourcesReferencesComponent }
+      { path: 'resources-references', component: ResourcesReferencesComponent },
+      { path: 'resources-events', component: ResourcesEventsComponent },
+      { path: 'resources-publications', component: ResourcesPublicationsComponent },
+      { path: 'resources-external-links', component: ResourcesExternalLinksComponent },
+      { path: 'products-models', component: ProductsModelsComponent },
+      { path: 'contact', component: ContactComponent },
+
+
     ]),
   ],
   providers: [],

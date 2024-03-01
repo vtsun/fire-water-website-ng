@@ -32,10 +32,15 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 
-    padding: 30px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    /* padding: 30px; */
     color: white;
     display: block;
 }
@@ -61,7 +66,9 @@ header .navbar ul li ul li {
 
 header .navbar ul li ul li a {
     font-size: 16px;
+    font-weight: 500;
     white-space: nowrap;
+    padding: 24px;
 
 }
 
