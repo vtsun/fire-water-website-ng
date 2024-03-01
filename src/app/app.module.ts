@@ -29,6 +29,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
+
+
+
 import { ResourcesEventsComponent } from './resources-events/resources-events.component';
 import { ResourcesPublicationsComponent } from './resources-publications/resources-publications.component';
 import { ResourcesExternalLinksComponent } from './resources-external-links/resources-external-links.component';
@@ -71,6 +75,8 @@ import { ProductsComponent } from './products/products.component';
     MatSnackBarModule,
     MatInputModule,
     MatFormFieldModule,
+    MatStepperModule,
+
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

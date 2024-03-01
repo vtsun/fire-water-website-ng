@@ -66,7 +66,7 @@ header .navbar ul li ul li {
 
 header .navbar ul li ul li a {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     white-space: nowrap;
     padding: 24px;
 
@@ -98,7 +98,7 @@ header label {
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
     header label {
         display: initial;
         padding: 20px
@@ -116,7 +116,7 @@ header label {
         top: 100%;
         left: 0;
         right: 0;
-        background: black;
+        background: rgba(0, 0, 0, 0.9);
         display: none;
     }
 
