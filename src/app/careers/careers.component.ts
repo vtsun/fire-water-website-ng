@@ -23,7 +23,22 @@ export class CareersComponent {
   thirdFormGroup = this._formBuilder.group({
     thirdCtrl: ['', [Validators.required, Validators.email]],
   });
+  documentFormGroup = this._formBuilder.group({
+    documentCtrl: [null, Validators.required],
+  });
 
   constructor(private _formBuilder: FormBuilder) {}
+
+  onFileSelected(event: any) {
+    const file = event.target.files[0];
+    this.documentFormGroup.patchValue({
+      documentCtrl: file
+    });
+  }
+
+  submitForm() {
+    // Handle submission of the form, e.g., send data to server
+    console.log('Form submitted successfully!');
+  }
 
 }

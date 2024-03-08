@@ -39,6 +39,7 @@ import { ResourcesExternalLinksComponent } from './resources-external-links/reso
 import { ProductsModelsComponent } from './products-models/products-models.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductsComponent } from './products/products.component';
+import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { ProductsComponent } from './products/products.component';
     ResourcesExternalLinksComponent,
     ContactComponent,
     ProductsComponent,
+    PartnerPageAComponent,
 
   ],
   imports: [
@@ -99,6 +101,7 @@ import { ProductsComponent } from './products/products.component';
       { path: 'products-models', component: ProductsModelsComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'products', component: ProductsComponent },
+      { path: 'partner-page-a', component: PartnerPageAComponent},
     ]),
   ],
   providers: [],

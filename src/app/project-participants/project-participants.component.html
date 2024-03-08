@@ -5,10 +5,12 @@
 <div class="project-participants-container">
     <mat-card class="profile-card">
         <mat-card-header>
-            <mat-card-title>John Doe</mat-card-title>
-            <mat-card-subtitle>Researcher</mat-card-subtitle>
+            <mat-card-title>
+                <a [routerLink]="'/partner-page-a'">John Doe</a>
+            </mat-card-title>
+            <mat-card-subtitle>Title/Role</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="assets/blank_avatar.jpeg">
+        <img mat-card-image src="assets/blank_avatar.jpeg" alt="Avatar" (click)="navigateToPage('/partner-page-a')">
         <mat-card-content>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
