@@ -11,5 +11,89 @@ body {
     text-decoration: none;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-text-field-wrapper {
+    background-color: white !important;
+    color: black !important;
+    border: solid black !important;
+    border-radius: 4px !important;
+}
+
+mat-label {
+    color: black !important;
+}
+
+.mat-mdc-form-field-focus-overlay {
+    background-color: rgb(180, 180, 180) !important;
+}
+
+.mat-mdc-input-element {
+    color: black !important;
+}
+
+/* .mat-mdc-input-element .ng-tns-c1205077789-0 .mat-mdc-form-field-input-control .mdc-text-field__input .ng-untouched .ng-invalid .cdk-text-field-autofill-monitored .ng-dirty {
+    color: black;
+} */
+
+.mat-mdc-input-element .mat-mdc-form-field-input-control {
+    color: black !important;
+}
+
+:root {
+    --mdc-filled-text-field-input-text-placeholder-color: grey;
+    --mat-select-panel-background-color: white;
+    --mat-paginator-container-text-color: rgba(255, 255, 255, 0.87);
+    --mat-paginator-container-background-color: #424242;
+    --mat-paginator-enabled-icon-color: rgba(20, 20, 20);
+    --mat-paginator-disabled-icon-color: rgba(150, 150, 150);
+}
+
+.mat-mdc-select-arrow {
+    color: black;
+}
+
+.mat-mdc-select {
+    color: black !important;
+}
+
+.mat-mdc-paginator-container {
+    color: black;
+    /* background-color: grey; */
+    background-color: white;
+    border-top-style: solid;
+
+}
+
+.mdc-list-item__primary-text {
+    color: black;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    font-weight: bold;
+    color: black;
+}
+
+/* .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: black;
+} */
+
+.mat-accent {
+    --mat-option-selected-state-label-text-color: black;
+}
+
+.mat-mdc-icon-button {
+    --mat-mdc-button-persistent-ripple-color: black;
+    --mat-mdc-button-ripple-color: rgba(80, 80, 80, 0.1);
+    --mdc-icon-button-icon-color: inherit;
+    --mat-mdc-button-persistent-ripple-color: black;
+    --mat-mdc-button-ripple-color: rgba(80, 80, 80, 0.1);
+}
