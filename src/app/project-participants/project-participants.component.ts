@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-participants',
@@ -7,8 +8,14 @@ import { Component } from '@angular/core';
 })
 
 export class ProjectParticipantsComponent {
+  constructor(private router: Router) {}
+
   openLink(url: string): void {
     window.open(url, '_blank');
+  }
+
+  navigateToPage(url: string) {
+    this.router.navigate([url]);
   }
 }
 

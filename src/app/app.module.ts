@@ -14,7 +14,7 @@ import { ProjectParticipantsComponent } from './project-participants/project-par
 import { ProjectUpdatesComponent } from './project-updates/project-updates.component';
 import { ResourcesReferencesComponent } from './resources-references/resources-references.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
@@ -29,12 +29,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 
-
-
-
+import { ResourcesEventsComponent } from './resources-events/resources-events.component';
+import { ResourcesPublicationsComponent } from './resources-publications/resources-publications.component';
+import { ResourcesExternalLinksComponent } from './resources-external-links/resources-external-links.component';
+import { ProductsModelsComponent } from './products-models/products-models.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductsComponent } from './products/products.component';
+import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component';
 
 
 @NgModule({
@@ -51,6 +56,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ProjectUpdatesComponent,
     ResourcesReferencesComponent,
     FilterPipe,
+    ResourcesEventsComponent,
+    ResourcesPublicationsComponent,
+    ResourcesExternalLinksComponent,
+    ContactComponent,
+    ProductsComponent,
+    PartnerPageAComponent,
 
   ],
   imports: [
@@ -66,10 +77,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatSnackBarModule,
     MatInputModule,
     MatFormFieldModule,
+    MatStepperModule,
+
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgxPaginationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -80,7 +94,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
       { path: 'project-overview', component: ProjectOverviewComponent },
       { path: 'project-participants', component: ProjectParticipantsComponent },
       { path: 'project-updates', component: ProjectUpdatesComponent },
-      { path: 'resources-references', component: ResourcesReferencesComponent }
+      { path: 'resources-references', component: ResourcesReferencesComponent },
+      { path: 'resources-events', component: ResourcesEventsComponent },
+      { path: 'resources-publications', component: ResourcesPublicationsComponent },
+      { path: 'resources-external-links', component: ResourcesExternalLinksComponent },
+      { path: 'products-models', component: ProductsModelsComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'partner-page-a', component: PartnerPageAComponent},
     ]),
   ],
   providers: [],

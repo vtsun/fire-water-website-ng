@@ -11,5 +11,116 @@ body {
     text-decoration: none;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-text-field-wrapper {
+    background-color: white !important;
+    color: black !important;
+    border: solid rgb(180, 180, 180) !important;
+    border-radius: 4px !important;
+}
+
+mat-label {
+    color: black !important;
+}
+
+.mat-mdc-form-field-focus-overlay {
+    background-color: rgb(200, 200, 200) !important;
+}
+
+.mat-mdc-input-element {
+    color: black !important;
+}
+
+/* .mat-mdc-input-element .ng-tns-c1205077789-0 .mat-mdc-form-field-input-control .mdc-text-field__input .ng-untouched .ng-invalid .cdk-text-field-autofill-monitored .ng-dirty {
+    color: black;
+} */
+
+.mat-mdc-input-element .mat-mdc-form-field-input-control {
+    color: black !important;
+}
+
+:root {
+    --mdc-filled-text-field-input-text-placeholder-color: grey;
+    --mat-select-panel-background-color: white;
+    --mat-paginator-container-text-color: rgba(255, 255, 255, 0.87);
+    --mat-paginator-container-background-color: #424242;
+    --mat-paginator-enabled-icon-color: rgba(20, 20, 20);
+    --mat-paginator-disabled-icon-color: rgba(150, 150, 150);
+    --mdc-filled-text-field-caret-color: black;
+    --mdc-filled-text-field-focus-active-indicator-color: rgb(180, 180, 180);
+    --mdc-filled-text-field-focus-label-text-color: rgba(180, 180, 180, 0.7);
+    --mat-select-focused-arrow-color: black;
+    --mdc-outlined-text-field-caret-color: white;
+    --mat-table-row-item-outline-color: rgba(180, 180, 180, 0.5);    
+}
+
+.mat-mdc-select-arrow {
+    color: black;
+}
+
+.mat-mdc-select {
+    color: black !important;
+}
+
+.mat-mdc-paginator-container {
+    color: black;
+    /* background-color: grey; */
+    background-color: white;
+    border-top-style: solid;
+
+}
+
+.mdc-list-item__primary-text {
+    color: black;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    font-weight: bold;
+    color: black;
+}
+
+/* .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: black;
+} */
+
+.mat-accent {
+    --mat-option-selected-state-label-text-color: black;
+
+}
+
+.mat-mdc-icon-button {
+    --mat-mdc-button-persistent-ripple-color: black;
+    --mat-mdc-button-ripple-color: rgba(80, 80, 80, 0.1);
+    --mdc-icon-button-icon-color: inherit;
+    --mat-mdc-button-persistent-ripple-color: black;
+    --mat-mdc-button-ripple-color: rgba(80, 80, 80, 0.1);
+}
+
+.mat-mdc-form-field.mat-accent {
+    /* --mdc-filled-text-field-caret-color: #b0bec5;
+    --mdc-filled-text-field-focus-active-indicator-color: #b0bec5;
+    --mdc-filled-text-field-focus-label-text-color: rgba(176, 190, 197, 0.87); */
+    --mdc-outlined-text-field-caret-color: white;
+    --mdc-outlined-text-field-focus-outline-color: white;
+    /* --mdc-outlined-text-field-focus-label-text-color: rgb(255 255 255 / 87%); */
+}
+
+html .mat-mdc-form-field.mat-accent {
+    /* --mat-select-panel-background-color: #424242;
+    --mat-select-enabled-trigger-text-color: rgba(255, 255, 255, 0.87);
+    --mat-select-disabled-trigger-text-color: rgba(255, 255, 255, 0.38);
+    --mat-select-placeholder-text-color: rgba(255, 255, 255, 0.6);
+    --mat-select-enabled-arrow-color: rgba(255, 255, 255, 0.54);
+    --mat-select-disabled-arrow-color: rgba(255, 255, 255, 0.38); */
+    --mat-select-focused-arrow-color: rgb(180, 180, 180);
+    /* --mat-select-invalid-arrow-color: rgba(244, 67, 54, 0.87); */
+}

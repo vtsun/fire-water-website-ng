@@ -1,0 +1,47 @@
+<app-sticky-header></app-sticky-header>
+
+<div class="contact-page-container">
+    <h1>
+        Contact Us
+    </h1>
+    <div class="contact-form-container">
+        <ul>
+            <li>
+                <mat-form-field>
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                    <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+                </mat-form-field>
+            </li>
+            <li>
+                <mat-form-field>
+                    <mat-label>Enter your name</mat-label>
+                    <input matInput placeholder="Your name" [formControl]="name" required>
+                    <mat-error *ngIf="name.invalid && name.errors?.['required']">Name is required</mat-error>
+                </mat-form-field>
+            </li>
+            <li>
+                <mat-form-field>
+                    <mat-label>Enter your organization</mat-label>
+                    <input matInput placeholder="Your organization" [formControl]="organization" required>
+                    <mat-error *ngIf="organization.invalid && organization.errors?.['required']">Organization is
+                        required</mat-error>
+                </mat-form-field>
+            </li>
+            <li>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Leave a message</mat-label>
+                    <textarea matInput placeholder="Ex. I would like to discuss..."></textarea>
+                </mat-form-field>
+            </li>
+            <li>
+                <button mat-flat-button (click)="openSnackBar('TEST Message Submitted', 'OK')" >Submit</button>
+            </li>
+
+        </ul>
+
+
+
+
+    </div>
+</div>

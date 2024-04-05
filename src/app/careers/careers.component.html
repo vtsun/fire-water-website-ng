@@ -1,1 +1,98 @@
 <app-sticky-header></app-sticky-header>
+
+<div class="careers-page-container">
+    <h1>
+        Work With Us
+    </h1>
+
+    <mat-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+
+        <!-- <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field>
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step> -->
+
+        <mat-step [stepControl]="thirdFormGroup" errorMessage="Email is required.">
+            <form [formGroup]="thirdFormGroup">
+                <ng-template matStepLabel="">Fill out your email</ng-template>
+                <mat-form-field>
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="johndoe@email.com" formControlName="thirdCtrl" required>
+                    <mat-error *ngIf="thirdFormGroup.get('thirdCtrl')?.hasError('email')">
+                        Invalid email address
+                    </mat-error>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+
+        <!-- <mat-step [stepControl]="documentFormGroup" errorMessage="Documents are required">
+            <ng-template matStepLabel="">Submit documents</ng-template>
+            <div class="file-submit">
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+                <button mat-flat-button>Submit</button>
+            </div>
+
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+            </div>
+        </mat-step> -->
+
+        <!-- <mat-step [stepControl]="documentFormGroup" errorMessage="Documents are required">
+            <form [formGroup]="documentFormGroup" (ngSubmit)="submitForm()">
+                <ng-template matStepLabel>Submit your Resume</ng-template>
+                <mat-form-field>
+                    <mat-label>Upload Resume</mat-label>
+                    <input type="file" (change)="onFileSelected($event)" accept=".pdf,.doc,.docx"
+                        formControlName="documentCtrl" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button type="submit" [disabled]="!documentFormGroup.valid">Submit</button>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+
+                </div>
+            </form>
+        </mat-step> -->
+
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+                <button mat-button>Submit</button>
+            </div>
+        </mat-step>
+
+    </mat-stepper>
+
+</div>

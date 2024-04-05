@@ -30,39 +30,60 @@
                 <!-- <a [routerLink]="'/project'">Project</a> -->
                 <a [routerLink]="'/project-overview'">Project</a>
 
-                <ul>
-                    <li><a [routerLink]="'/project-overview'">Overview</a></li>
-                    <li><a [routerLink]="'/project-participants'">Participants</a></li>
-
-                    <!-- <li><a [routerLink]="'/project-updates'">News & Updates</a></li> -->
-                </ul>
-            </li>
-            <li>
-                <!-- <a [routerLink]="'/data'">Data</a> -->
-                <a (click)="openSnackBar('Data Page Currently Unavailable', 'OK')">Data</a>
-                <ul>
-                    <!-- <li><a href="map-interactive-1.html">Interactive Wildfire Map</a></li>
-                    <li><a href="data-wildfire-search.html">Search Wildfires</a></li> -->
-                    <!-- <li><a href="">Map 2</a></li>
-                            <li><a href="">Map 3</a></li> -->
-                </ul>
-            </li>
-            <li>
-                <!-- <a [routerLink]="'/careers'">Careers</a> -->
-                <a (click)="openSnackBar('Careers Page Currently Unavailable', 'OK')">Careers</a>
-
                 <!-- <ul>
-                            <li><a href=""></a></li>
-                        </ul> -->
+                    <li><a [routerLink]="'/project-overview'">Overview</a></li>
+                    <li><a [routerLink]="'/project-updates'">News & Updates</a></li>
+                </ul> -->
             </li>
+
+            <li><a [routerLink]="'/project-participants'">Partners</a></li>
+
+            <li>
+                <!-- <a [routerLink]="'/products'">Products</a> -->
+                <a (click)="openSnackBar('Products Page Currently Unavailable', 'OK')">Products</a>
+                <ul>
+                    <li>
+                        <!-- <a [routerLink]="'/products-models'">Models</a> -->
+                        <a (click)="openSnackBar('Models Page Currently Unavailable', 'OK')">Models</a>
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/data'">Data</a> -->
+                        <a (click)="openSnackBar('Data Page Currently Unavailable', 'OK')">Data</a>
+                    </li>
+                </ul>
+            </li>
+
             <li>
                 <!-- <a [routerLink]="'/resources'">Resources</a> -->
                 <a [routerLink]="'/resources-references'">Resources</a>
 
                 <ul>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-events'">Events</a> -->
+                        <a (click)="openSnackBar('Events Page Currently Unavailable', 'OK')">Events</a>
+
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-publications'">Publications</a> -->
+                        <a (click)="openSnackBar('Publications Page Currently Unavailable', 'OK')">Publications</a>
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/careers'">Work With Us</a> -->
+                        <a (click)="openSnackBar('Career Page Currently Unavailable', 'OK')">Work With Us</a>
+                    </li>
+                    <li>
+                        <!-- <a [routerLink]="'/resources-external-links'">External Links</a> -->
+                        <a (click)="openSnackBar('External Links Page Currently Unavailable', 'OK')">External Links</a>
+                    </li>
                     <li><a [routerLink]="'/resources-references'">References</a></li>
                 </ul>
             </li>
+
+            <li>
+                <a [routerLink]="'/contact'">Contact</a>
+                <!-- <a (click)="openSnackBar('Contact Page Currently Unavailable', 'OK')">Contact</a> -->
+            </li>
+
         </ul>
     </nav>
 </header>
