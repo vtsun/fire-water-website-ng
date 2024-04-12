@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./data.component.css']
 })
 export class DataComponent {
-
 }
