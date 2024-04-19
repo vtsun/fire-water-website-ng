@@ -41,6 +41,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductsComponent } from './products/products.component';
 import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component';
 
+// GEE Implementation
+import { SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
+import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 
 @NgModule({
   declarations: [
@@ -85,6 +88,9 @@ import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component
     FormsModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+
+    SocialLoginModule,
+
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'resources', component: ResourcesComponent },
@@ -104,7 +110,18 @@ import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component
       { path: 'partner-page-a', component: PartnerPageAComponent},
     ]),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [{
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider('304740708708-0it65k0sqjton2jp4chuaekftbp5gudv.apps.googleusercontent.com')
+        }]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

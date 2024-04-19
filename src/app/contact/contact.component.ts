@@ -19,7 +19,7 @@ export class ContactComponent {
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter a value';
+      return 'You must enter a valid email address';
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
