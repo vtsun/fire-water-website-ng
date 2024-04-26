@@ -20,6 +20,12 @@ https://angular.io/guide/deployment
 
 git switch gh-pages
 
+git merge main
+
+i
+esc
+:wq
+
 ng build --output-path docs --base-href /fire-water-website-ng/
 
 Add 404.html
