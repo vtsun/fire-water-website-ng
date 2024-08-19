@@ -1,0 +1,18 @@
+mat-card {
+    transition: transform 0.2s;
+}
+
+mat-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+mat-card:hover a[mat-stroked-button] {
+    /* background-color: rgba(200, 200, 200); */
+    border-color: rgba(220, 220, 220);
+}
+
+a[mat-stroked-button]:hover {
+    background-color: rgba(220, 220, 220);
+    /* border-color: white; */
+}

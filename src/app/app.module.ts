@@ -40,6 +40,8 @@ import { ProductsModelsComponent } from './products-models/products-models.compo
 import { ContactComponent } from './contact/contact.component';
 import { ProductsComponent } from './products/products.component';
 import { PartnerPageAComponent } from './partner-page-a/partner-page-a.component';
+import { HomePageCardComponent } from './home-page-card/home-page-card.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 
 // GEE Implementation
 import { SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
@@ -65,6 +67,8 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
     ContactComponent,
     ProductsComponent,
     PartnerPageAComponent,
+    HomePageCardComponent,
+    ProfileCardComponent,
 
   ],
   imports: [
