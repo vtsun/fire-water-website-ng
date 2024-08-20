@@ -1,6 +1,12 @@
+:host {
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+}
+
 .page-card {
     background-color: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -32,18 +38,22 @@ a[mat-stroked-button] {
     width: 300px;
 }
 
-mat-card {
+/* mat-card {
     transition: transform 0.2s;
 }
 
 mat-card:hover {
     transform: scale(1.05);
     transition: transform 0.2s;
-}
+} */
 
 mat-card:hover a[mat-stroked-button] {
     /* background-color: rgba(200, 200, 200); */
     border-color: rgba(220, 220, 220);
+}
+
+mat-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 a[mat-stroked-button]:hover {

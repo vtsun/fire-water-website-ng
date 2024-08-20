@@ -12,37 +12,51 @@
         </div>
     </div>
 
-    <div class="homepage-content-container" id="start-content">
-        <app-home-page-card
-            imageSrc="assets/fire_pic_1_crop.jpg"
-            buttonText="Learn About The Project"
+    <!-- <div class="homepage-content-container" id="start-content">
+        <app-home-page-card imageSrc="assets/fire_pic_1_crop.jpg" buttonText="Learn About The Project"
             [link]="'/project-overview'">
         </app-home-page-card>
 
-        <app-home-page-card
-            imageSrc="assets/fire_pic_2_crop.jpg"
-            buttonText="View Project Partners"
+        <app-home-page-card imageSrc="assets/fire_pic_2_crop.jpg" buttonText="View Project Partners"
             [link]="'/project-participants'">
         </app-home-page-card>
 
-        <app-home-page-card
-            imageSrc="assets/test_map_imagery_crop.jpg"
-            buttonText="View Resources"
+        <app-home-page-card imageSrc="assets/test_map_imagery_crop.jpg" buttonText="View Resources"
             [link]="'/resources-references'">
         </app-home-page-card>
 
-        <app-home-page-card
-            imageSrc="assets/fire_pic_4_crop.jpg"
-            buttonText="Contact Us"
-            [link]="'/contact'">
+        <app-home-page-card imageSrc="assets/fire_pic_4_crop.jpg" buttonText="Contact Us" [link]="'/contact'">
         </app-home-page-card>
 
-        <!-- <app-home-page-card
+        <app-home-page-card
             imageSrc="assets/fire_pic_3_crop.jpg"
             buttonText="Explore Products"
             [link]="'/products'">
-        </app-home-page-card> -->
+        </app-home-page-card>
+    </div> -->
+
+    <div class="scroll-container-wrapper">
+        <div class="scroll-container">
+            <app-home-page-card imageSrc="assets/fire_pic_1_crop.jpg" buttonText="About The Project"
+                [link]="'/project-overview'">
+            </app-home-page-card>
+
+            <app-home-page-card imageSrc="assets/fire_pic_2_crop.jpg" buttonText="View Partners"
+                [link]="'/project-participants'">
+            </app-home-page-card>
+
+            <app-home-page-card imageSrc="assets/test_map_imagery_crop.jpg" buttonText="View Resources"
+                [link]="'/resources-references'">
+            </app-home-page-card>
+
+            <app-home-page-card imageSrc="assets/fire_pic_4_crop.jpg" buttonText="Contact Us" [link]="'/contact'">
+            </app-home-page-card>
+        </div>
     </div>
+
+
+
+
 
     <body></body>
 </main>
