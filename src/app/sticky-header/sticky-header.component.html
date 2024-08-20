@@ -14,26 +14,21 @@
         </a>
     </nav>
 
-    <!-- Menu Bar for small resolutions -->
-    <!-- Change to animated icon later -->
     <input type="checkbox" id="menu-bar">
     <label for="menu-bar" class="menu-label">
         <img class="hamburger" src="assets/hamburger.svg">
-        <!-- Menu -->
     </label>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <ul>
-            <!-- <li><a href="homepage.html">Home</a></li> -->
             <li><a [routerLink]="''">Home</a></li>
             <li>
                 <!-- <a [routerLink]="'/project'">Project</a> -->
                 <a [routerLink]="'/project-overview'">Project</a>
 
-                <!-- <ul>
+                <ul>
                     <li><a [routerLink]="'/project-overview'">Overview</a></li>
                     <li><a [routerLink]="'/project-updates'">News & Updates</a></li>
-                </ul> -->
+                </ul>
             </li>
 
             <li><a [routerLink]="'/project-participants'">Partners</a></li>
