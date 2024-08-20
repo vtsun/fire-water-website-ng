@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home-page-card',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './home-page-card.component.css'
 })
 export class HomePageCardComponent {
+  @Input() imageSrc: string = '';
+  @Input() buttonText: string = '';
+  @Input() link: string = '/'
 
 }

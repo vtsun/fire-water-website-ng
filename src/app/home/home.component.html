@@ -10,50 +10,38 @@
                 Wildfire Impacts on Water Quality
             </h1>
         </div>
-        <!-- <div>
-            <a href="#start-content" id="scrollLink">
-                <img class="arrow" src="assets/down-arrow.svg">
-            </a>
-        </div> -->
     </div>
 
     <div class="homepage-content-container" id="start-content">
-        <mat-card class="page-card">
-            <img src="assets/fire_pic_1_crop.jpg" class="page-card-img">
-            <mat-card-footer>
-                <a mat-stroked-button [routerLink]="'/project-overview'">Learn About The Project</a>
-            </mat-card-footer>
-        </mat-card>
+        <app-home-page-card
+            imageSrc="assets/fire_pic_1_crop.jpg"
+            buttonText="Learn About The Project"
+            [link]="'/project-overview'">
+        </app-home-page-card>
 
-        <mat-card class="page-card">
-            <img src="assets/fire_pic_2_crop.jpg" class="page-card-img">
-            <mat-card-footer>
-                <a mat-stroked-button [routerLink]="'/project-participants'">View Project Partners</a>
-            </mat-card-footer>
-        </mat-card>
+        <app-home-page-card
+            imageSrc="assets/fire_pic_2_crop.jpg"
+            buttonText="View Project Partners"
+            [link]="'/project-participants'">
+        </app-home-page-card>
 
-        <!-- <mat-card class="page-card">
-            <img src="assets/fire_pic_3_crop.jpg" class="page-card-img">
-            <mat-card-footer>
-                <a mat-stroked-button [routerLink]="'/products'">Explore Products</a>
-            </mat-card-footer>
-        </mat-card> -->
+        <app-home-page-card
+            imageSrc="assets/test_map_imagery_crop.jpg"
+            buttonText="View Resources"
+            [link]="'/resources-references'">
+        </app-home-page-card>
 
+        <app-home-page-card
+            imageSrc="assets/fire_pic_4_crop.jpg"
+            buttonText="Contact Us"
+            [link]="'/contact'">
+        </app-home-page-card>
 
-        <mat-card class="page-card">
-            <img src="assets/test_map_imagery_crop.jpg" class="page-card-img">
-            <mat-card-footer>
-                <!-- <a mat-stroked-button [routerLink]="'/resources'">View Resources</a> -->
-                <a mat-stroked-button [routerLink]="'/resources-references'">View Resources</a>
-            </mat-card-footer>
-        </mat-card>
-
-        <mat-card class="page-card">
-            <img src="assets/fire_pic_4_crop.jpg" class="page-card-img">
-            <mat-card-footer>
-                <a mat-stroked-button [routerLink]="'/contact'">Contact Us</a>
-            </mat-card-footer>
-        </mat-card>
+        <!-- <app-home-page-card
+            imageSrc="assets/fire_pic_3_crop.jpg"
+            buttonText="Explore Products"
+            [link]="'/products'">
+        </app-home-page-card> -->
     </div>
 
     <body></body>

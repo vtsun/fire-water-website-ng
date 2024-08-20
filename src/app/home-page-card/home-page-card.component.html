@@ -1,4 +1,6 @@
-<!-- <p>home-page-card works!</p> -->
 <mat-card class="page-card">
-    
+    <img [src]="imageSrc" class="page-card-img" alt="Card image">
+    <mat-card-footer>
+        <a mat-stroked-button [routerLink]="link">{{ buttonText }}</a>
+    </mat-card-footer>
 </mat-card>
