@@ -25,14 +25,6 @@
     transform: translateX(-50%);
 }
 
-/* .arrow {
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    height: 32px;
-    transform: translateX(-50%);
-} */
-
 .homepage-title-container {
     position: absolute;
     text-align: center;
@@ -50,155 +42,6 @@
     font-size: 60px;
     color: white;
 }
-
-/* .homepage-content-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: start;
-    gap: 50px;
-} */
-
-/* .grid-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 365px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-} */
-
-/* .grid-page-image-container img {
-    width: 365px;
-    height: 365px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-} */
-
-/* .grid-page-img {
-    width: 365px;
-    height: 200px;
-}
-
-.grid-page-text-container {
-    flex: 2;
-}
-
-.grid-page-text-container h1 {
-    font-size: 28px;
-    text-align: center;
-}
-
-.grid-page-text-container p {
-    text-align: left;
-} */
-
-/* .grid-page-button-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-grow: 1;
-    margin-bottom: 32.5px;
-
-} */
-
-/* .grid-page-button-container a {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.grid-page-button-container a:hover {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
-} */
-
-/* .grid-page-button {
-    width: 300px;
-    padding: 24px 24px;
-    background-color: rgba(40, 40, 40);
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-} */
-/* 
-.grid-page-button:hover {
-    background-color: rgba(80, 80, 80);
-} */
-
-/* .page-card {
-    background-color: white;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .page-card-img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-} */
-
-/* mat-card-content {
-    flex: 1;
-    overflow: auto;
-}
-
-mat-card-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-}
-
-a[mat-stroked-button] {
-    background-color: white;
-    padding: 24px 24px;
-    font-size: 18px;
-    color: black;
-    border-radius: 24px;
-    width: 300px;
-}
-
-mat-card {
-    transition: transform 0.2s;
-}
-
-mat-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s;
-}
-
-mat-card:hover a[mat-stroked-button] {
-    border-color: rgba(220, 220, 220);
-}
-
-a[mat-stroked-button]:hover {
-    background-color: rgba(220, 220, 220);
-} */
-
-/* .homepage-content-container {
-    margin-top: 40px;
-    margin-left: 8%;
-    margin-right: 8%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 48px;
-    padding-bottom: 48px;
-} */
-
 
 .homepage-content-container {
     margin-top: 40px;
@@ -219,41 +62,7 @@ a[mat-stroked-button]:hover {
     margin-top: 20px;
     margin-left: 8%;
     margin-right: 8%;
-    /* padding-bottom: 48px; */
     padding: 20px; 
-    scroll-behavior: smooth;
-}
-
-.scroll-container::-webkit-scrollbar {
-    height: 12px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-    background-color: rgba(100, 100, 100, 0.5); /* Customize scrollbar color */
-    border-radius: 6px;
-}
-
-.scroll-container::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-app-home-page-card {
-    flex: 1 1 300px;
-    min-width: 300px;
-    box-sizing: border-box;
-}
-
-
-/* .scroll-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: visible; 
-    gap: 48px;
-    margin-top: 40px;
-    margin-left: 8%;
-    margin-right: 8%;
-    padding-bottom: 48px;
     scroll-behavior: smooth;
 }
 
@@ -274,5 +83,4 @@ app-home-page-card {
     flex: 1 1 300px;
     min-width: 300px;
     box-sizing: border-box;
-} */
-
+}
