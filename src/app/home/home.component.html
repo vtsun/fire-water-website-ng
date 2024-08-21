@@ -36,7 +36,7 @@
     </div> -->
 
     <div class="scroll-container-wrapper">
-        <div class="scroll-container">
+        <div class="scroll-container" #scrollContainer>
             <app-home-page-card imageSrc="assets/fire_pic_1_crop.jpg" buttonText="About The Project"
                 [link]="'/project-overview'">
             </app-home-page-card>
@@ -52,7 +52,12 @@
             <app-home-page-card imageSrc="assets/fire_pic_4_crop.jpg" buttonText="Contact Us" [link]="'/contact'">
             </app-home-page-card>
         </div>
-    </div>
-    
+
+        <button mat-icon-button class="scroll-arrow" (click)="scrollRight()">
+            <mat-icon>arrow_forward</mat-icon>
+        </button>        
+
+    </div>    
+
     <body></body>
 </main>
