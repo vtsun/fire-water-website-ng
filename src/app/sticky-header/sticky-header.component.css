@@ -149,3 +149,17 @@ header label {
 }
 
 
+.dropdown-icon {
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+
+}
+
+header .navbar ul li:hover .dropdown-icon {
+    transform: translateY(-50%) rotate(180deg);
+}

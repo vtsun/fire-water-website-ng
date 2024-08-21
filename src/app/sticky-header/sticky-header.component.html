@@ -21,9 +21,12 @@
     <nav class="navbar">
         <ul>
             <li><a [routerLink]="''">Home</a></li>
+            <li><a [routerLink]="'/project-participants'">Partners</a></li>
+
             <li>
                 <!-- <a [routerLink]="'/project'">Project</a> -->
-                <a [routerLink]="'/project-overview'">Project</a>
+                <a [routerLink]="'/project-overview'">Project <mat-icon
+                        class="dropdown-icon">arrow_drop_down</mat-icon></a>
 
                 <ul>
                     <li><a [routerLink]="'/project-overview'">Overview</a></li>
@@ -31,11 +34,11 @@
                 </ul>
             </li>
 
-            <li><a [routerLink]="'/project-participants'">Partners</a></li>
 
             <li>
                 <!-- <a [routerLink]="'/products'">Products</a> -->
-                <a (click)="openSnackBar('Products Page Currently Unavailable', 'OK')">Products</a>
+                <a (click)="openSnackBar('Products Page Currently Unavailable', 'OK')">Products <mat-icon
+                        class="dropdown-icon">arrow_drop_down</mat-icon></a>
                 <ul>
                     <li>
                         <!-- <a [routerLink]="'/products-models'">Models</a> -->
@@ -50,7 +53,8 @@
 
             <li>
                 <!-- <a [routerLink]="'/resources'">Resources</a> -->
-                <a [routerLink]="'/resources-references'">Resources</a>
+                <a [routerLink]="'/resources-references'">Resources <mat-icon
+                        class="dropdown-icon">arrow_drop_down</mat-icon></a>
 
                 <ul>
                     <li>
