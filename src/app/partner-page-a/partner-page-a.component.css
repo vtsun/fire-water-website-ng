@@ -12,6 +12,11 @@ p {
 
 .partner-content-section {
     margin-right: 24px;
+    width: 75%;
+}
+
+.partner-img-section {
+    width: 25%;
 }
 
 .partner-title h1 {
@@ -48,9 +53,7 @@ p {
 }
 
 
-
-
 .partner-img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
