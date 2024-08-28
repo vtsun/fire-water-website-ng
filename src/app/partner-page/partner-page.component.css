@@ -2,7 +2,7 @@ p {
     font-weight: 300;
 }
 
-.partner-page-a-container {
+.partner-page {
     margin-top: 124px;
     margin-left: 8%;
     margin-right: 8%;
@@ -10,7 +10,7 @@ p {
     flex-direction: row;
 }
 
-/* .partner-content-section {
+.partner-content-section {
     margin-right: 24px;
     width: 75%;
 }
@@ -39,6 +39,7 @@ p {
 
 .partner-content-text h3 {
     margin-top: 24px;
+    margin-bottom: 12px;
 }
 
 .partner-content-text p {
@@ -55,4 +56,4 @@ p {
 .partner-img {
     width: 100%;
     height: auto;
-} */
+}

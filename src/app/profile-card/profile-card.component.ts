@@ -17,6 +17,7 @@ export class ProfileCardComponent {
   @Input() webLink: string = '/';
   @Input() linkedInLink: string = '/';
   @Input() xLink: string = '/';
+  @Input() googleScholar: string = '/'
 
 
   constructor(private router: Router) {}

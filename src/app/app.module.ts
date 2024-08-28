@@ -46,6 +46,7 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
 // GEE Implementation
 import { SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
+import { PartnerPageComponent } from './partner-page/partner-page.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
     PartnerPageAComponent,
     HomePageCardComponent,
     ProfileCardComponent,
+    PartnerPageComponent,
 
   ],
   imports: [
