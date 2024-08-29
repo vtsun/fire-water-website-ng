@@ -17,7 +17,7 @@ export class PartnerPageComponent {
   @Input() pub3: string = '';
   @Input() addInfo: string = '';
 
-  @Input() link: string = '/';
+  @Input() webLink: string = '/';
   @Input() linkedInLink: string = '/';
   @Input() xLink: string = '/';
   @Input() googleScholar: string = '/';
