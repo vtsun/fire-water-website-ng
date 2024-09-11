@@ -1,4 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { PartnerService } from '../services/partner.service';
+import { Partner } from '../models/partner';
 
 @Component({
   selector: 'app-partner-page',
@@ -7,6 +10,9 @@ import { Component, Input } from '@angular/core';
   templateUrl: './partner-page.component.html',
   styleUrl: './partner-page.component.css'
 })
+
+// Old Code
+
 export class PartnerPageComponent {
   @Input() name: string = '';
   @Input() role: string = '';

@@ -15,6 +15,10 @@ export class PartnerService {
     return this.http.get<Partner[]>(this.apiURL);
   }
 
+  getPartnerById(id: number): Observable<Partner> {
+    return this.http.get<Partner>(`${this.apiURL}/${id}`);
+  }
+
   addPartner(partner: Partner): Observable<Partner> {
     return this.http.post<Partner>(this.apiURL, partner);
   }
