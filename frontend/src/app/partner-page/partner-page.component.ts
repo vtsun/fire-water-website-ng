@@ -30,7 +30,11 @@ export class PartnerPageComponent {
 
   @Input() imageSrc: string = '';
 
-  openLink(url: string): void {
-    window.open(url, '_blank');
+  openLink(url: string | undefined): void {
+    if (url) {
+      window.open(url, '_blank');
+    } else {
+      console.warn('No link available');
+    }
   }
 }

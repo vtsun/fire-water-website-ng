@@ -8,22 +8,26 @@ import { Router } from '@angular/router';
   styleUrl: './profile-card.component.css'
 })
 export class ProfileCardComponent {
-  @Input() link: string = '/';
-  @Input() name: string = '';
-  @Input() role: string = '';
-  @Input() imageSrc: string = '';
-  @Input() content: string = '';
+  @Input() link!: string;
+  @Input() name!: string;
+  @Input() role!: string;
+  @Input() imageSrc?: string;
+  @Input() content!: string;
 
-  @Input() webLink: string = '/';
+  @Input() webLink?: string;
   @Input() linkedInLink: string = '/';
   @Input() xLink: string = '/';
   @Input() googleScholar: string = '/'
 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
-  openLink(url: string): void {
-    window.open(url, '_blank');
+  openLink(url: string | undefined): void {
+    if (url) {
+      window.open(url, '_blank');
+    } else {
+      console.warn('No link available')
+    }
   }
 
   navigateToPage(url: string) {

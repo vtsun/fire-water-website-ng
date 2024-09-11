@@ -1,0 +1,9 @@
+.project-participants-container {
+    padding-top: 124px;
+    padding-bottom: 48px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 48px;
+}

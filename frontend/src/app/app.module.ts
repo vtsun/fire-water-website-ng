@@ -33,6 +33,7 @@ import { HomePageCardComponent } from './home-page-card/home-page-card.component
 import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { PartnerPageComponent } from './partner-page/partner-page.component';
 import { PartnerPageDbverComponent } from './partner-page-dbver/partner-page-dbver.component';
+import { ProjectPartnersComponent } from './project-partners/project-partners.component';
 
 // Material
 import { MatCardModule } from '@angular/material/card';
@@ -80,6 +81,7 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
     ProfileCardComponent,
     PartnerPageComponent,
     PartnerPageDbverComponent,
+    ProjectPartnersComponent,
 
   ],
   imports: [
@@ -125,6 +127,9 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
       { path: 'contact', component: ContactComponent },
       { path: 'products', component: ProductsComponent },
       { path: 'partner-page-a', component: PartnerPageAComponent},
+
+      { path: 'project-partners', component: ProjectPartnersComponent},
+      { path: 'partner-page-dbver', component: PartnerPageDbverComponent},
     ]),
   ],
   providers: [
